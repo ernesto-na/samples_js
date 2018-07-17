@@ -7,7 +7,7 @@ menor y si son iguales
 var num1 =0;
 var num2 =0;
 
-while(num1<=0 || num2<=0 || isNaN(num1) ||isNaN(num2))
+while(num1<=0 || num2<=0 || isNaN(num1) ||isNaN(num2) )
 {
 	num1 =prompt("Escriba el primer número",0);
 	num2 =prompt("Escriba el segundo numero número",0);

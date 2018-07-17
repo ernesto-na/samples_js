@@ -3,17 +3,15 @@
 'use strict'
 
 
-//do
-//{
-var tabla = parseInt(prompt("Escribe la tabla: ",1));
-console.log(tabla);
-document.write("La tabla del: "+tabla);
-//confirm("Tabla: "+tabla+" numero: "+num+" = "+tabla*num);
-for(var i=1; i>=10; i++)
+do
 {
- document.write(tabla+" x "+ i "="+tabla*i);
-}
+		var tabla = parseInt(prompt("Escribe la tabla: ",1));
+		console.log(tabla);
+		document.write("La tabla del: "+tabla +"<br>");
 
-var res=prompt("Continuar.. S/N","S")
-//}while(res!="n");
-
+		for(var i=0; i<=10; i++)
+		{
+			document.write(tabla +" x "+ i+"="+tabla * i +"<br>");
+		}
+		var res = prompt("¿Continuar?","s")
+}while(res!="n")

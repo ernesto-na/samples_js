@@ -1,6 +1,6 @@
 'use strict'
 var numero = 44;
-var texto1 = "Bienvenido al curso de Javascript de curso Ernesto Nepomuceno";
+var texto1 = "  Bienvenido al curso de Javascript de curso Ernesto Nepomuceno";
 var texto2 = "es muy buen curso";
 
 //Regresa la posicion de la coincidencia
@@ -31,4 +31,16 @@ var busqueda = texto1.endsWith("Nepomuceno");
 console.log(busqueda);
 
 var busqueda = texto1.includes("Nepomuceno");
+console.log(busqueda);
+
+var busqueda = texto1.replace("Nepomuceno","NEPOMUCENO");
+console.log(busqueda);
+
+var busqueda = texto1.slice(14,22);
+console.log(busqueda);
+
+var busqueda = texto1.split(" ");
+console.log(busqueda);
+
+var busqueda = texto1.trim();
 console.log(busqueda);

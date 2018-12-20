@@ -15,4 +15,14 @@ var cine = [categorias,peliculas];
 
     }while (elemento!='ACABAR');
 
+    peliculas.pop();
+
     console.log(peliculas);
+
+    console.log
+
+      for(var i = 0; i<peliculas.length; i++){
+
+            document.write(peliculas[i]+"<br>");
+
+      }

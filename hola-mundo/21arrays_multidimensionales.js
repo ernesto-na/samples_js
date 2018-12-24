@@ -24,5 +24,22 @@ var cine = [categorias,peliculas];
       for(var i = 0; i<peliculas.length; i++){
 
             document.write(peliculas[i]+"<br>");
+        }
+      var string_peliculas = peliculas.join();
 
+      console.log(string_peliculas);
+
+document.write("<br>");
+
+
+
+    var indice =  prompt("¿Qué pelicula quieres borrar?");
+
+    var borrarPelicula = peliculas.indexOf(indice);
+    //delete peliculas[borrarPelicula];
+    peliculas.splice(borrarPelicula,1)
+
+    for(var i = 0; i<peliculas.length; i++){
+
+          document.write(peliculas[i]+"<br>");
       }

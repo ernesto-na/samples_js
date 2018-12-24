@@ -21,6 +21,8 @@ var cine = [categorias,peliculas];
 
     console.log
 
+    //ordenamiento arreglo
+    peliculas = peliculas.sort();
       for(var i = 0; i<peliculas.length; i++){
 
             document.write(peliculas[i]+"<br>");
@@ -38,8 +40,15 @@ document.write("<br>");
     var borrarPelicula = peliculas.indexOf(indice);
     //delete peliculas[borrarPelicula];
     peliculas.splice(borrarPelicula,1)
-
+    peliculas = peliculas.sort();
     for(var i = 0; i<peliculas.length; i++){
 
           document.write(peliculas[i]+"<br>");
       }
+
+document.write("<br>");
+      peliculas = peliculas.reverse();
+      for(var i = 0; i<peliculas.length; i++){
+
+            document.write(peliculas[i]+"<br>");
+        }

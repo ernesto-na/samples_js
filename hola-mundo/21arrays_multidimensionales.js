@@ -3,6 +3,17 @@
 var categorias = ['Comedia','Terror','Drama'];
 var peliculas = ['Mulan', 'Titanic','Rocky'];
 
+function imprimeArregloPeliculas(peliculasArr)
+{
+  document.write("Contenido: ");
+  document.write("<br>");
+  for(var i = 0; i<peliculasArr.length; i++){
+
+        document.write(peliculasArr[i]+"<br>");
+    }
+
+}
+
 var cine = [categorias,peliculas];
 
 //console.log(cine[1][2]);
@@ -23,17 +34,9 @@ var cine = [categorias,peliculas];
 
     //ordenamiento arreglo
     peliculas = peliculas.sort();
-      for(var i = 0; i<peliculas.length; i++){
-
-            document.write(peliculas[i]+"<br>");
-        }
-      var string_peliculas = peliculas.join();
-
-      console.log(string_peliculas);
-
-document.write("<br>");
-
-
+    imprimeArregloPeliculas(peliculas);
+    var string_peliculas = peliculas.join();
+    console.log(string_peliculas);
 
     var indice =  prompt("¿Qué pelicula quieres borrar?");
 
@@ -41,14 +44,7 @@ document.write("<br>");
     //delete peliculas[borrarPelicula];
     peliculas.splice(borrarPelicula,1)
     peliculas = peliculas.sort();
-    for(var i = 0; i<peliculas.length; i++){
+    imprimeArregloPeliculas(peliculas);
 
-          document.write(peliculas[i]+"<br>");
-      }
-
-document.write("<br>");
       peliculas = peliculas.reverse();
-      for(var i = 0; i<peliculas.length; i++){
-
-            document.write(peliculas[i]+"<br>");
-        }
+      imprimeArregloPeliculas(peliculas);

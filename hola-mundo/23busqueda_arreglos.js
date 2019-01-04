@@ -2,6 +2,7 @@
 
 var peliculas = ['Mulan', 'Titanic','Rocky','Shreck', 'Sabrina'];
 
+var precios =[10,20,30,40,50,60];
 function recorrerConForIn(arreglo)
 {
   document.write("<br>");
@@ -24,4 +25,11 @@ console.log("-->" + pelicula);
 
 
     var busqueda = peliculas.findIndex(lenguaje => lenguaje == "Titanic");
+
+    var busqueda_precios = precios.some(precio => precio >= 20);
+
+
+
 console.log(busqueda);
+
+console.log(busqueda_precios);

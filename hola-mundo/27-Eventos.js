@@ -1,15 +1,28 @@
 //Eventos del raton
 'use strict'
   var boton = document.querySelector("#boton");
-function cambiarColor(){
+  var bg;
+  function cambiarColor()
+  {
+    console.log("entrando: ");
+     bg = boton.style.backgroundColor;
+      if(bg == "green"){
+              boton.style.backgroundColor = "red";
+
+        }else{
+            boton.style.backgroundColor = "green";
+        }
+      return true;
+  }
+/*function cambiarColor(){
   var bg = boton.style.background;
-    if(bg == "green"){
+  /*  if(bg == "green"){
           bg = "red";
     }else{
         bg = "green";
     }
     return == true;
-}
+}*/
 function redirigir(url){
 
     window.location.href = url;
@@ -28,7 +41,7 @@ console.log(window.location);
 console.log(window.location.href);
 
 }
-getBom();
+//getBom();
 function cambiaColor(color){
 
   caja.style.color = color;
@@ -57,5 +70,3 @@ texto1.style.background = "red";
 texto1.style.color="white";
 
 console.log(texto1);
-
-var boton = document.querySelector("#boton")

@@ -27,6 +27,29 @@ boton.addEventListener('mouseout',function(){
       boton.style.backgroundColor = "#ccc";
 });
 
+var nombre = document.querySelector("#campo_nombre")
+
+//Focus
+nombre.addEventListener('mouseover',function(){
+      console.log("se tiene el focus...")
+});
+//Blur
+nombre.addEventListener('blur',function(){
+      console.log("se quita el focus...")
+});
+//Keydown
+nombre.addEventListener('keydown',function(event){
+      console.log("se pulsa tecla", String.fromCharCode(event.keyCode) )
+});
+//Keypress
+nombre.addEventListener('keypress',function(event){
+      console.log("se presiona tecla", String.fromCharCode(event.keyCode) )
+});
+//KeyUp
+nombre.addEventListener('keyup',function(event){
+      console.log("se suelta tecla", String.fromCharCode(event.keyCode) )
+});
+
 
 function redirigir(url){
 
@@ -62,7 +85,7 @@ caja.style.color="white";
 caja.className="holaclase"
 
 
-console.log(caja);
+
 
 //Conseguir todos los elementos por su etiqueta
 var todosLosDivs = document.getElementsByTagName('div');
@@ -73,5 +96,3 @@ var texto1 = todosLosDivs[2];
 texto1.innerHTML = "cambiado por js";
 texto1.style.background = "red";
 texto1.style.color="white";
-
-console.log(texto1);

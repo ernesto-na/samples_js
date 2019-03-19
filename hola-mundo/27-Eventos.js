@@ -1,6 +1,6 @@
 //Eventos del raton
 'use strict'
-  var boton = document.querySelector("#boton");
+
   var bg;
   function cambiarColor()
   {
@@ -14,15 +14,20 @@
         }
       return true;
   }
-/*function cambiarColor(){
-  var bg = boton.style.background;
-  /*  if(bg == "green"){
-          bg = "red";
-    }else{
-        bg = "green";
-    }
-    return == true;
-}*/
+var boton = document.querySelector("#boton");
+boton.addEventListener('click',function(){
+    cambiarColor();
+});
+
+boton.addEventListener('mouseover',function(){
+      boton.style.backgroundColor = "yellow";
+});
+
+boton.addEventListener('mouseout',function(){
+      boton.style.backgroundColor = "#ccc";
+});
+
+
 function redirigir(url){
 
     window.location.href = url;

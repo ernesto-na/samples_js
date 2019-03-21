@@ -1,6 +1,8 @@
 //Eventos del raton
 'use strict'
 
+window.addEventListener('load',() => {
+
   var bg;
   function cambiarColor()
   {
@@ -96,3 +98,5 @@ var texto1 = todosLosDivs[2];
 texto1.innerHTML = "cambiado por js";
 texto1.style.background = "red";
 texto1.style.color="white";
+
+});  //end load

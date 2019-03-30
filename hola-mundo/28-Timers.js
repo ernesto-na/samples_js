@@ -1,6 +1,6 @@
 'use strict'
 
-
+// setInterval   <----Se ejecuta una sola vez
 window.addEventListener('load',() => {
 
 var tiempo  = setInterval( function (){

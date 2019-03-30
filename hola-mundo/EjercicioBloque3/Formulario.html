@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<h1>Angular</h1>
+	<h2>Formulario</h2>
+	<title>Ejercicio Dom, Eventos y Funciones</title>
+	<script type="text/javascript" src="ejercicioDom.js"></script>
+  <style>
+    .box{
+          width : 200px;
+          height : 250px;
+          float : left;
+          margin : 30px;
+          padding: 3px;
+    }
+    .dashed{
+          border: 3px dashed black;
+          padding: 5px;
+          margin : 30px;
+
+    }
+  </style>
+</head>
+<body>
+<!--
+    1.-Formulario Campos : Nombre , Apellidos y Edad
+    2.-Boton de enviar el formulario eventos: submit
+    3.-Mostrar datos por pantalla
+    4.-Botón  que al darle click nos muestre los datos en pantalla
+  -->
+<div class="box">
+  <form action="#" method="POST" id="formulario" onsubmit="return false;">
+    <label for="nombre">Nombre</label>
+    <input type="nombre" name="nombre" id="nombre"> <br>
+
+    <label for="apellidos">Apellidos</label>
+    <input type="apellidos" name="apellidos" id="apellidos"><br>
+
+    <label for="edad">Edad</label>
+    <input type="edad" name="edad" id="edad"><br>
+    <input type="submit" name="Enviar" id="submit"><br>
+  </form>
+</div>
+
+<div class ="box dashed"
+    <h3>Informacion del usuario</h3>
+    <hr>
+
+</div>
+
+</body>
+</html>

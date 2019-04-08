@@ -12,9 +12,32 @@ console.log("Inicia load");
         console.log("Evento submit");
         var nombre = document.querySelector('#nombre').value
         var apellidos = document.querySelector('#apellidos').value
-        var edad = document.querySelector('#edad').value
-        box_dashed.style.display = "block";
+        var edad = parseInt(document.querySelector('#edad').value);
 
+
+        if (nombre.trim() == null || nombre.trim() == ""){
+          alert("Nombre incorrecto")
+          document.querySelector('#error_nombre').innerHTML="Nombre incorrecto";
+          return false;
+        }else{
+            document.querySelector('#error_nombre').style.display = "none"
+        }
+
+        if (apellidos.trim() == null || apellidos.trim() == ""){
+          alert("Apellidos incorrecto")
+          document.querySelector('#error_apellidos').innerHTML="Apellidos incorrecto";
+          return false;
+        }{
+            document.querySelector('#error_apellidos').style.display = "none"
+        }
+
+        if (edad == null || edad == 0 || isNaN(edad)){
+          alert("Edad incorrecta")
+          document.querySelector('#error_edad').innerHTML="Edad incorrecta";
+          return false;
+        }{
+            document.querySelector('#error_edad').style.display = "none"
+        }
         /*parrafo.append(nombre);
         parrafo.append(apellidos);
         parrafo.append(edad);
@@ -27,6 +50,7 @@ console.log("Inicia load");
               parrafo.append(datos_usuario[indice]);
               box_dashed.append(parrafo);
         }   */
+        box_dashed.style.display = "block";
         var p_nombre = document.querySelector("#p_nombre span");
         var p_apellidos = document.querySelector("#p_apellidos span");
         var p_edad = document.querySelector("#p_edad span");
